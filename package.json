@@ -1,0 +1,27 @@
+{
+  "name": "ad-blocker-app",
+  "version": "1.0.0",
+  "description": "广告屏蔽桌面应用",
+  "main": "src/main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder"
+  },
+  "keywords": ["ad-blocker", "electron"],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^28.0.0",
+    "electron-builder": "^24.9.1"
+  },
+  "build": {
+    "appId": "com.adblocker.app",
+    "productName": "广告屏蔽助手",
+    "mac": {
+      "category": "public.app-category.utilities"
+    },
+    "win": {
+      "target": "nsis"
+    }
+  }
+}
